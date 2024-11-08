@@ -10,7 +10,7 @@ import { LiaTelegram } from "react-icons/lia";
 import { IoMdClose } from "react-icons/io";
 
 export const Popover = () => {
-  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+  const [isPopoverOpen, setIsPopoverOpen] = useState(true);
   const menuRef = useRef(null);
 
   const togglePopover = () => {
@@ -72,9 +72,11 @@ export const Popover = () => {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className={` popover fixed -bg-white rounded-[10px] left-0 top-[50px] lg:top-[20%] lg:left-[20%] w-[90%] mx-[5%] h-[650px] lg:w-[650px] lg:h-[500px] py-[40px] px-[20px] lg:px-[30px] lg:-translate-x-1/2 lg:-translate-y-1/2 opacity-100 transition-all duration-500 ease-in-out flex flex-col lg:flex-row gap-[30px] z-[100] ${isPopoverOpen ? 'active ' : 'inactive'}`}
+          className={` popover fixed -bg-white rounded-[10px] left-0 top-[50px] md:top-[10%] md:left-[10%] lg:top-[20%] lg:left-[20%] w-[90%] md:w-[70%] md:rounded-[15px] mx-[5%] h-fit md:h-[500px] lg:w-[650px] lg:h-[500px] py-[40px] px-[20px] lg:px-[30px] lg:-translate-x-1/2 lg:-translate-y-1/2 opacity-100 transition-all duration-500 ease-in-out flex flex-col lg:flex-row md:flex-row gap-[30px] z-[100] ${
+            isPopoverOpen ? "active " : "inactive"
+          }`}
         >
-          <div className="flex flex-row lg:flex-col gap-[20px] justify-between lg:gap-[100px]">
+          <div className="flex flex-row lg:flex-col md:flex-col gap-[20px] justify-between lg:gap-[100px]">
             <div className=" flex flex-col gap-[20px] lg:gap-[20px]">
               <img
                 src="/Cover-Image_colored.jpg"
@@ -111,7 +113,7 @@ export const Popover = () => {
             <h1 className="text-[25px] lg:text-[32px] font-semibold">
               About Me
             </h1>
-            <p className="overflow-y-auto h-[300px]">
+            <p className="overflow-y-auto h-[300px] md:h-[350px]">
               Hello, my name is Richard Nyamekye and I am a web developer. I am
               a creative and detail-oriented individual with a passion for
               creating visually stunning and user-friendly websites. With

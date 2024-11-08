@@ -47,18 +47,18 @@ export const ServicesTabs = () => {
   };
 
   return (
-    <div className="flex flex-col gap-[20px] lg:gap-[30px] md:flex-col w-full items-center lg:flex-row">
-      <div className="flex flex-col gap-[10px] relative md:w-[90%]">
+    <div className="flex flex-col gap-[20px] lg:gap-[30px] md:gap-[30px] md:flex-col w-full items-center lg:items-start lg:flex-row ">
+      <div className="flex flex-col lg:w-[70%] gap-[10px] md:gap-[20px] relative md:w-[90%]">
         {tabs.map((tab) => (
           <div
             key={tab.id}
-            className={`services-tabs rounded-[8px] border-[1px] -border-border shadow-customShadow p-[15px] -bg-tabs gap-[10px] flex flex-col cursor-pointer duration-500 z-10 ${
+            className={`services-tabs rounded-[8px] border-[1px] -border-border shadow-customShadow p-[15px] md:p-[20px] -bg-tabs gap-[10px] flex flex-col cursor-pointer duration-500 ${
               activeTab === tab.id ? "active" : "inactive"
             } border-tabs-border`}
             onClick={() => handleTabClick(tab.id)}
           >
             <h1
-              className={`text-[18px] flex items-center gap-[10px] ${
+              className={`text-[18px] flex items-center gap-[10px]  ${
                 activeTab === tab.id ? "active" : "inactive"
               }`}
             >
@@ -68,9 +68,9 @@ export const ServicesTabs = () => {
             <div className="flex">
               {activeTab === tab.id && (
                 <div
-                  className={`-bg-black -text-white text-[15px] gap-[15px] flex flex-col z-0`}
+                  className={`-bg-black -text-white text-[15px] gap-[15px] md:gap-[20px] lg:gap-[20px] flex flex-col`}
                 >
-                  <p>{tab.content}</p>
+                  <p className="w-[90%]">{tab.content}</p>
                   <Button_Tab text={"Get Started"} />
                 </div>
               )}
@@ -79,18 +79,18 @@ export const ServicesTabs = () => {
         ))}
       </div>
 
-      <div className="md:w-[90%] w-full lg:w-1/2 flex items-start">
+      <div className="md:w-[90%] w-full lg:w-full flex  items-start lg:h-[50px]">
         {tabs.map(
           (tab) =>
             activeTab === tab.id && (
               <div
                 key={tab.id}
-                className=" w-full lg:w-full h-[250px] rounded-[10px]"
+                className=" w-full lg:w-full h-[250px] lg:h-[full] rounded-[10px]"
               >
                 <img
                   src={tab.imageUrl}
                   alt={`Image for ${tab.heading}`}
-                  className="w-full h-full lg:w-full lg:h-[400px] md-full md:h-[400px] object-cover rounded-[15px]"
+                  className="w-full h-full lg:w-full lg:h-[450px] md-full md:h-[400px] object-cover rounded-[15px]"
                 />
               </div>
             )

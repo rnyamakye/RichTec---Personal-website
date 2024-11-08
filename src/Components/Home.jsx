@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from "react";
 import { RiTwitterXLine } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -8,23 +7,22 @@ import "../App.css";
 import { Carousel } from "./Carousel";
 import { Form } from "./Form";
 import { FaArrowRight } from "react-icons/fa";
-import { ProjectCard } from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 import { Popover } from "./popover";
 import "../App.css";
-
-import { Button_Black, Button_White } from "./Button";
+import { Button_White } from "./Button";
 
 export default function Home() {
   return (
     <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10">
       <header className=" w-[90%] lg:w-[1080px] lg:h-fit h-[800px] " id="about">
         <div className="flex flex-col gap-[120px] lg:gap-[70px] lg:flex-row items-center">
-          <div className="flex-col flex gap-[10px] lg:w-1/2 lg:gap-[20px] lg:leading-7">
+          <div className="flex-col flex gap-[10px] md:gap-[20px] lg:w-1/2 lg:gap-[20px] lg:leading-7">
             <h2 className="-text-brown font-medium">Hello there 👋</h2>
-            <h1 className="text-[34px] font-[500] lg:leading-snug">
-              This is Richard, A Web Designer{" "}
-              <span className="-text-brown">
-                with Creative Expertise & Years of Experience.
+            <h1 className="text-[34px] md:text-[40px] font-[500] lg:leading-snug md:leading-tight">
+              This is Richard, A Web Designer with{" "}
+              <span className="-text-brown opacity-60">
+                 Creative Expertise & Years of Experience.
               </span>
             </h1>
             <p className="text-[15px]">
@@ -43,11 +41,11 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="relative lg:translate-x-[30px] translate-y-[20px] lg:w-[400px] w-[380px] h-[380px] -bg-black rounded-full lg:h-[400px] lg:top-[30px]">
+            <div className="relative lg:translate-x-[30px] translate-y-[20px] lg:w-[400px] w-[350px] h-[350px] -bg-black rounded-full lg:h-[400px] md:h-[500px] md:w-[500px] lg:top-[30px]">
               <img
                 src="/Cover-image-png.png"
                 alt="cover-image"
-                className="w-[280px] h-[472px] lg:h-[500px] object-cover lg:w-[300px] relative -top-[92px] -right-[28px] lg:-right-[25px] lg:-top-[105px]  rounded-b-full lg:-rotate-[6deg] -rotate-[6deg] "
+                className="w-[265px] h-[450px] lg:h-[500px] object-cover lg:w-[300px] md:w-[350px] md:h-[590px] relative -top-[100px] -right-[28px] lg:-right-[25px] lg:-top-[105px] md:-top-[95px] md:-right-[37px] rounded-b-full lg:-rotate-[6deg] -rotate-[6deg] "
               />
             </div>
           </div>
@@ -58,9 +56,11 @@ export default function Home() {
         className=" w-[90%] lg:w-[1080px] flex flex-col gap-[15px] lg:gap-[50px]"
         id="services"
       >
-        <div className="text-center gap-[10px] flex flex-col">
-          <h1 className="text-[32px] lg:text-[50px]">My Services</h1>
-          <h2 className="text-[15px] -text-brown lg:text-[20px]">
+        <div className="text-center gap-[10px] flex flex-col items-center">
+          <h1 className="text-[32px] lg:text-[50px] md:text-[45px]">
+            My Services
+          </h1>
+          <h2 className="text-[15px] md:text-[20px] md:w-[80%] -text-brown lg:text-[20px]">
             Check Out All Services below then Click the Get Started Button to
             Proceed.
           </h2>
@@ -73,8 +73,8 @@ export default function Home() {
       <section id="work" className="w-[90%] lg:w-[1080px] ">
         <div className="flex flex-col gap-[30px] lg:gap-[50px]">
           <div className="text-center flex flex-col gap-[10px] ">
-            <h1 className="text-[30px] lg:text-[50px]">My Work</h1>
-            <h2 className="text-[15px] -text-brown lg:text-[20px] ">
+            <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">My Work</h1>
+            <h2 className="text-[15px] -text-brown lg:text-[20px] md:text-[20px] ">
               Check Out a Collection of Projects I've Worked On
             </h2>
           </div>
@@ -87,8 +87,8 @@ export default function Home() {
       <section className="w-[90%] lg:w-[1080px]" id="testimonials">
         <div className="flex-col flex gap-[40px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
-            <h1 className="text-[30px] lg:text-[50px]">Happy Client</h1>
-            <h2 className="text-[15px] -text-brown lg:text-[20px] lg:w-[45%]">
+            <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">Happy Client</h1>
+            <h2 className="text-[15px] md:text-[20px] md:w-[65%] -text-brown lg:text-[20px] lg:w-[45%]">
               Here's what my satisfied Clients have to say about their
               experience working with me!
             </h2>

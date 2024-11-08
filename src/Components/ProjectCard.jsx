@@ -1,7 +1,7 @@
 import { TbCalendar } from "react-icons/tb";
 import { BsTag } from "react-icons/bs";
 
-export const ProjectCard = () => {
+const ProjectCard = () => {
   const projects = [
     {
       title: "Event Website",
@@ -9,7 +9,7 @@ export const ProjectCard = () => {
         "An event website is a platform designed to promote and manage events such as conferences, seminars, and more",
       date: "Oct 30, 2024",
       type: "Web Design",
-      image: "/Wed-design.jpg",
+      image: "/event-website-image.jpg",
     },
     {
       title: "Membership Website",
@@ -90,3 +90,4 @@ export const ProjectCard = () => {
   );
 };
 
+export default ProjectCard;
