@@ -8,11 +8,8 @@ import { Button_Black } from "./Button";
 import { HashLink as Link } from "react-router-hash-link";
 
 export const Navbar = () => {
-
-  
-
   return (
-    <nav className=" p-[15px] rounded-[10px] -border-border border-[1px] lg:w-[980px] w-[90%] flex justify-between fixed top-[20px] -bg-white z-50">
+    <nav className=" p-[15px] rounded-[10px] -border-border border-[1px] smd:w-[85%] md: lg:w-[980px] w-[90%] flex justify-between fixed top-[20px] -bg-white z-50 transition-all duration-300 ease">
       <div className="flex gap-[25px] items-center md:justify-between">
         <div className="flex gap-[13px] -text-navbar">
           <a href="">

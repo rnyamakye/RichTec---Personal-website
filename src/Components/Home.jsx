@@ -22,7 +22,7 @@ export default function Home() {
             <h1 className="text-[34px] md:text-[40px] font-[500] lg:leading-snug md:leading-tight">
               This is Richard, A Web Designer with{" "}
               <span className="-text-brown opacity-60">
-                 Creative Expertise & Years of Experience.
+                Creative Expertise & Years of Experience.
               </span>
             </h1>
             <p className="text-[15px]">
@@ -41,11 +41,11 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="relative lg:translate-x-[30px] translate-y-[20px] lg:w-[400px] w-[350px] h-[350px] -bg-black rounded-full lg:h-[400px] md:h-[500px] md:w-[500px] lg:top-[30px]">
+            <div className="relative lg:translate-x-[30px] translate-y-[20px] lg:w-[400px] w-[320px] h-[320px] -bg-black rounded-full lg:h-[400px] md:h-[500px] smd:w-[420px] smd:h-[420px] md:w-[500px] lg:top-[30px]">
               <img
                 src="/Cover-image-png.png"
                 alt="cover-image"
-                className="w-[265px] h-[450px] lg:h-[500px] object-cover lg:w-[300px] md:w-[350px] md:h-[590px] relative -top-[100px] -right-[28px] lg:-right-[25px] lg:-top-[105px] md:-top-[95px] md:-right-[37px] rounded-b-full lg:-rotate-[6deg] -rotate-[6deg] "
+                className="w-[240px] h-[400px] lg:h-[500px] object-cover lg:w-[300px] md:w-[350px] smd:w-[300px] smd:h-[500px] md:h-[590px] relative -top-[80px] -right-[28px] lg:-right-[25px] lg:-top-[105px] md:-top-[95px] smd:-top-[82px] smd:-right-[32px] md:-right-[37px] rounded-b-full lg:-rotate-[6deg] -rotate-[6deg] "
               />
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
       </header>
       <div className="border-b-[1px] pt-[100px] lg:pt-0 -border-border shadow-customShadow w-full"></div>
       <section
-        className=" w-[90%] lg:w-[1080px] flex flex-col gap-[15px] lg:gap-[50px]"
+        className=" w-[90%] lg:w-[1080px] flex flex-col gap-[15px] lg:gap-[50px] md:gap-[50px]"
         id="services"
       >
         <div className="text-center gap-[10px] flex flex-col items-center">
@@ -65,7 +65,7 @@ export default function Home() {
             Proceed.
           </h2>
         </div>
-        <div>
+        <div className="flex flex-col items-center">
           <ServicesTabs />
         </div>
       </section>
@@ -73,7 +73,9 @@ export default function Home() {
       <section id="work" className="w-[90%] lg:w-[1080px] ">
         <div className="flex flex-col gap-[30px] lg:gap-[50px]">
           <div className="text-center flex flex-col gap-[10px] ">
-            <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">My Work</h1>
+            <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
+              My Work
+            </h1>
             <h2 className="text-[15px] -text-brown lg:text-[20px] md:text-[20px] ">
               Check Out a Collection of Projects I've Worked On
             </h2>
@@ -87,8 +89,10 @@ export default function Home() {
       <section className="w-[90%] lg:w-[1080px]" id="testimonials">
         <div className="flex-col flex gap-[40px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
-            <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">Happy Client</h1>
-            <h2 className="text-[15px] md:text-[20px] md:w-[65%] -text-brown lg:text-[20px] lg:w-[45%]">
+            <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
+              Happy Client
+            </h1>
+            <h2 className="text-[15px] md:text-[20px] md:w-[65%] smd:w-[70%] -text-brown lg:text-[20px] lg:w-[45%]">
               Here's what my satisfied Clients have to say about their
               experience working with me!
             </h2>
@@ -98,18 +102,18 @@ export default function Home() {
       </section>
       <div className="border-b-[1px]  -border-border shadow-customShadow w-full"></div>
       <footer
-        className="w-[90%] lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]"
+        className="w-[90%]  lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]"
         id="contact"
       >
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">
-          <div className="w-full lg:w-[480px] md:w-1/3">
+          <div className="w-full smd:w-[500px] lg:w-[480px] md:w-1/3">
             <img
               src="/Cover-Image_colored.jpg"
               alt="cover-image-colored"
               className="h-[351px] w-full lg:w-full lg:h-[600px] md:w-full md:h-[500px] object-cover rounded-[8px] object-top"
             />
           </div>
-          <div className="flex flex-col lg:w-2/3 gap-[30px] lg:gap-[30px]">
+          <div className="flex flex-col smd:w-[500px] lg:w-2/3 gap-[30px] lg:gap-[30px]">
             <div className="flex flex-col gap-[5px]">
               <h1 className="text-[35px] lg:text-[50px] lg:font-medium">
                 Work With Me!

@@ -54,7 +54,7 @@ const ProjectCard = () => {
   ];
   return (
     <div>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-[20px]">
+      <div className="flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-[20px]">
         {projects.map((project, index) => (
           <div key={index} className="relative group overflow-hidden">
             <img

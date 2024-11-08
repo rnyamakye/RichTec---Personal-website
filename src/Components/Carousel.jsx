@@ -85,7 +85,8 @@ export const Carousel = () => {
             className={`flex gap-5 md:gap-3 lg:gap-8 px-2 transition-transform duration-300 ease-in-out`}
             style={{
               transform: `translateX(-${
-                currentIndex * (viewportWidth <= 480 ? 100 : 49)
+                currentIndex *
+                (viewportWidth <= 480 ? 100 : viewportWidth <= 768 ? 70 : 49)
               }%)`,
               scrollSnapType: "x mandatory",
             }}
@@ -93,7 +94,7 @@ export const Carousel = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] lg:w-[500px] lg:h-[350px] md:w-[350px] md:h-[350px] lg:p-16 smd:p-16 md:p-16"
+                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[350px] lg:p-16 smd:p-16 md:p-16"
                 style={{
                   scrollSnapAlign: "center",
                 }}
