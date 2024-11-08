@@ -1,3 +1,13 @@
+/* body.blurred {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+
+} */
+
+.no-scroll {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "CustomFontName";
   src: url("./fonts/GeneralSans-Variable.ttf") format("truetype");
@@ -51,6 +61,59 @@ body {
   border-radius: 10px;
   border: 1px solid #e6e6e6;
 }
+
+.popoverOverlay.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 100vw;
+  display: block;
+  background-color: rgba(184, 184, 184, 0.9);
+  z-index: 100;
+}
+/* .popoverOverlay.inactive {
+  opacity: 0;
+  display: hidden;
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  transition: background-color 500ms ease;
+} */
+
+.popover.active {
+  animation: popIn 300ms ease forwards;
+}
+
+.popover.inactive {
+  animation: popOut 300ms ease forwards;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    transform-origin: center;
+  }
+}
+@keyframes popOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: center;
+  }
+}
+
 .services-tabs {
   color: black;
   height: 64px;
@@ -64,4 +127,3 @@ body {
   height: 180px;
   border-radius: 15px;
 }
-

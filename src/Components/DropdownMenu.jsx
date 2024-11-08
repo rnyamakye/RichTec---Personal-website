@@ -7,17 +7,33 @@ import "../App.css";
 export const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+
   const toggleDropdown = () => {
     setIsOpen(true);
   };
+
   const closeDropdown = () => {
     setIsOpen(false);
   };
+
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       setIsOpen(false);
     }
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
+
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
 
@@ -27,7 +43,7 @@ export const DropdownMenu = () => {
   }, [isOpen]);
 
   return (
-    <div>
+    <div className="">
       <button className="dropdown-container bg-slate-800 p-2 rounded-full ">
         <RxHamburgerMenu
           className="md:text-4xl lg:text-4xl sm:text-2xl"
@@ -40,7 +56,7 @@ export const DropdownMenu = () => {
           style={{ display: isOpen ? "block" : "none" }}
         />
         <div
-          className={` dropdown-menu absolute mt-0 sm:w-full -right-[0%] justify-center -bg--green-700 -text--white-100 sm:py-10 text-white text-center flex flex-col gap-5 my-4 duration-500 ease-in-out px-5 ${
+          className={`dropdown-menu absolute mt-0 sm:w-full -right-[0%] justify-center sm:py-10 text-white text-center flex flex-col gap-5 my-4 duration-500 ease-in-out px-5 ${
             isOpen ? "active" : "inactive"
           }`}
           ref={menuRef}
@@ -48,31 +64,36 @@ export const DropdownMenu = () => {
           <div className="relative -text-brown gap-3 text-white ">
             <Link
               to="/#about"
-              className="sm:block px-4 py-2  md:hidden  hover:-text-black"
+              className="sm:block px-4 py-2 md:hidden hover:-text-black"
+              onClick={closeDropdown}
             >
               About
             </Link>
             <Link
               to="/#services"
-              className="sm:block px-4 py-2 md:hidden  hover:-text-black"
+              className="sm:block px-4 py-2 md:hidden hover:-text-black"
+              onClick={closeDropdown}
             >
               Services
             </Link>
             <Link
               to="/#work"
-              className="sm:block px-4 py-2 md:hidden  hover:-text-black"
+              className="sm:block px-4 py-2 md:hidden hover:-text-black"
+              onClick={closeDropdown}
             >
               Work
             </Link>
             <Link
               to="/#testimonials"
-              className="sm:block px-4 py-2 md:hidden  hover:-text-black"
+              className="sm:block px-4 py-2 md:hidden hover:-text-black"
+              onClick={closeDropdown}
             >
               Testimonials
             </Link>
             <Link
               to="/#contact"
-              className="sm:block px-4 py-2 md:hidden  hover:-text-black"
+              className="sm:block px-4 py-2 md:hidden hover:-text-black"
+              onClick={closeDropdown}
             >
               Contact
             </Link>

@@ -15,6 +15,7 @@ export default {
       "-border": "#EDEDED",
       "-tabs": "#F7F7F7",
       "-tabs-border": "#EEEEEE",
+      "-backdrop": "rgba(255, 255, 255, 0.85)",
     },
     extend: {
       boxShadow: {
