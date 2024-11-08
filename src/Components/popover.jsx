@@ -10,7 +10,7 @@ import { LiaTelegram } from "react-icons/lia";
 import { IoMdClose } from "react-icons/io";
 
 export const Popover = () => {
-  const [isPopoverOpen, setIsPopoverOpen] = useState(true);
+  const [isPopoverOpen, setIsPopoverOpen] = useState(null);
   const menuRef = useRef(null);
 
   const togglePopover = () => {
