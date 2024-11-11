@@ -12,16 +12,19 @@ export const Navbar = () => {
     <nav className=" p-[15px] rounded-[10px] -border-border border-[1px] smd:w-[85%] md: lg:w-[980px] w-[90%] flex justify-between fixed top-[20px] -bg-white z-50 transition-all duration-300 ease">
       <div className="flex gap-[25px] items-center md:justify-between">
         <div className="flex gap-[13px] -text-navbar">
-          <a href="">
+          <a href="https://x.com/rnya040903" target="_blank">
             <RiTwitterXLine />
           </a>
-          <a href="">
+          <a href="https://github.com/rnyamakye" target="_blank">
             <IoLogoGithub />
           </a>
-          <a href="">
+          <a href="https://wa.me/233257152860" target="">
             <FaWhatsapp />
           </a>
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/richard-nyamekye-7b1380246/"
+            target="_blank"
+          >
             <FaLinkedin />
           </a>
         </div>

@@ -132,12 +132,12 @@ export const Carousel = () => {
           </div>
         </div>
 
-        <div className="flex justify-center space-x-2 mt-4">
+        <div className="flex justify-center space-x-1 mt-0">
           {cards.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-blue-500" : "-bg-brown"
+              className={`w-2 h-2 rounded-full ${
+                index === currentIndex ? "-bg-tabs" : "-bg-brown"
               }`}
             />
           ))}
@@ -148,7 +148,7 @@ export const Carousel = () => {
           {/* Previous Button */}
           {currentIndex > 0 && (
             <button
-              className="-text-white -bg-black w-[30px] h-[30px] rounded-full -bg--green-700 flex justify-center items-center absolute bottom-[200px] -left-[px] z-10"
+              className="-text-white -bg-black/20 w-[26px] h-[26px] rounded-full -bg--green-700 flex justify-center items-center absolute bottom-[150px]  z-10"
               onClick={goToPrevious}
             >
               <FaChevronLeft />
@@ -157,7 +157,7 @@ export const Carousel = () => {
           {/* Next Button */}
           {currentIndex < reviews.length - 1 && (
             <button
-              className="-bg-black -text-white w-[30px] h-[30px] rounded-full -bg--green-700 flex justify-center items-center z-10 absolute right-0 bottom-[200px]"
+              className="-bg-black/20 -text-white w-[26px] h-[25px] rounded-full -bg--green-700 flex justify-center items-center z-10 absolute right-0 bottom-[150px]"
               onClick={goToNext}
             >
               <FaChevronRight />

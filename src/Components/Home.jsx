@@ -124,16 +124,19 @@ export default function Home() {
             </div>
             <div className="flex-col flex gap-[30px]">
               <div className="flex gap-[13px] -text-brown text-[24px] lg:text-[24px]">
-                <a href="">
+                <a href="https://x.com/rnya040903" target="_blank">
                   <RiTwitterXLine />
                 </a>
-                <a href="">
+                <a href="https://github.com/rnyamakye" target="_blank">
                   <IoLogoGithub />
                 </a>
-                <a href="">
+                <a href="https://wa.me/233257152860" target="">
                   <FaWhatsapp />
                 </a>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/in/richard-nyamekye-7b1380246/"
+                  target="_blank"
+                >
                   <FaLinkedin />
                 </a>
               </div>
