@@ -115,7 +115,7 @@ body {
 .services-tabs {
   color: black;
   height: 64px;
-  transition: height 300ms ease, background-color 100ms ease, color 300ms ease;
+  transition: height 300ms ease, background-color 500ms ease, color 300ms ease;
   border-radius: 10px;
 }
 

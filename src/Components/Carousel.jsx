@@ -8,40 +8,40 @@ export const Carousel = () => {
       title: "Pencil artist",
       src: "/client-1.jpg",
       review:
-        "'Amet minim molit non deserunt ullamco est sit aliqua dolor amet sint. Velit officia consequat duis enim velit. Exercitation veniam consequat'",
-      rating: 3, // Default rating
+        "'Working with Richard was a game-changer for my business. He took my vision and transformed it into a stunning website that not only looks great but also functions seamlessly.'",
+      rating: 5, // Default rating
     },
     {
       name: "David Fletcher",
       title: "Organic Food Enthusiast",
       src: "/client-1.jpg",
       review:
-        "'Amet minim molit non deserunt ullamco est sit aliqua dolor amet sint. Velit officia consequat duis enim velit. Exercitation veniam consequat'",
-      rating: 0, // Default rating
+        "'I was impressed with how quickly Richard understood my business needs and delivered a tailored solution.'",
+      rating: 5, // Default rating
     },
     {
       name: "Sophia Barnes",
       title: "Professional Chef and Culinary Expert",
       src: "/client-2.jpg",
       review:
-        "'Amet minim molit non deserunt ullamco est sit aliqua dolor amet sint. Velit officia consequat duis enim velit. Exercitation veniam consequat'",
-      rating: 0, // Default rating
+        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
+      rating: 4, // Default rating
     },
     {
       name: "Sophia Barnes",
       title: "Professional Chef and Culinary Expert",
       src: "/client-2.jpg",
       review:
-        "'Amet minim molit non deserunt ullamco est sit aliqua dolor amet sint. Velit officia consequat duis enim velit. Exercitation veniam consequat'",
-      rating: 0, // Default rating
+        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
+      rating: 4, // Default rating
     },
     {
       name: "Sophia Barnes",
       title: "Professional Chef and Culinary Expert",
       src: "/client-2.jpg",
       review:
-        "'Amet minim molit non deserunt ullamco est sit aliqua dolor amet sint. Velit officia consequat duis enim velit. Exercitation veniam consequat'",
-      rating: 0, // Default rating
+        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
+      rating: 4, // Default rating
     },
   ];
 
