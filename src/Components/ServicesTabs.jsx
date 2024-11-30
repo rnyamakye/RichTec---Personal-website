@@ -85,12 +85,12 @@ export const ServicesTabs = () => {
             activeTab === tab.id && (
               <div
                 key={tab.id}
-                className=" w-full lg:w-full h-[250px] lg:h-[full] rounded-[10px] md:h-full"
+                className=" w-full lg:w-full h-[250px] lg:h-[full] rounded-[10px] md:h-full "
               >
                 <img
                   src={tab.imageUrl}
                   alt={`Image for ${tab.heading}`}
-                  className="w-full h-full lg:w-full lg:h-[450px] md-full md:h-full object-cover rounded-[15px]"
+                  className="w-full h-full lg:w-full lg:h-[450px] md:h-full object-cover rounded-[15px]"
                 />
               </div>
             )

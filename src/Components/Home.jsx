@@ -14,8 +14,8 @@ import { Button_White } from "./Button";
 
 export default function Home() {
   return (
-    <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10">
-      <header className=" w-[90%] lg:w-[1080px] lg:h-fit h-[800px] " id="about">
+    <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10 mx-[5vw]">
+      <header className=" lg:w-[1080px] lg:h-fit h-[800px] " id="about">
         <div className="flex flex-col gap-[120px] lg:gap-[70px] lg:flex-row items-center">
           <div className="flex-col flex gap-[10px] md:gap-[20px] lg:w-1/2 lg:gap-[20px] lg:leading-7">
             <h2 className="-text-brown font-medium">Hello there 👋</h2>
@@ -53,7 +53,7 @@ export default function Home() {
       </header>
       <div className="border-b-[1px] pt-[100px] lg:pt-0 -border-border shadow-customShadow w-full"></div>
       <section
-        className=" w-[90%] lg:w-[1080px] flex flex-col gap-[15px] lg:gap-[50px] md:gap-[50px]"
+        className=" lg:w-[1080px] flex flex-col gap-[15px] lg:gap-[50px] md:gap-[50px]"
         id="services"
       >
         <div className="text-center gap-[10px] flex flex-col items-center">
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </section>
       <div className="border-b-[1px]  -border-border shadow-customShadow w-full"></div>
-      <section id="work" className="w-[90%] lg:w-[1080px] ">
+      <section id="work" className=" lg:w-[1080px] ">
         <div className="flex flex-col gap-[30px] lg:gap-[50px]">
           <div className="text-center flex flex-col gap-[10px] ">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </section>
       <div className="border-b-[1px]  -border-border shadow-customShadow w-full"></div>
-      <section className="w-[90%] lg:w-[1080px]" id="testimonials">
+      <section className=" w-full lg:w-[1080px]" id="testimonials">
         <div className="flex-col flex gap-[40px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
       <div className="border-b-[1px]  -border-border shadow-customShadow w-full"></div>
       <footer
-        className="w-[90%]  lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]"
+        className="lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]"
         id="contact"
       >
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">

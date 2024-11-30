@@ -94,7 +94,7 @@ export const Carousel = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[350px] lg:p-16 smd:p-16 md:p-16"
+                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[380px] lg:p-16 smd:p-16 md:p-16"
                 style={{
                   scrollSnapAlign: "center",
                 }}
@@ -112,13 +112,13 @@ export const Carousel = () => {
                 </div>
                 <p className="text-[15px]">{card.review}</p>
 
-                <div className="flex justify-start mt-2">
+                <div className="flex justify-start absolute bottom-[20px] mt-2">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <svg
                       key={star}
                       onClick={() => handleRatingChange(index, star)}
                       className={`w-3 h-3 cursor-pointer ${
-                        star <= card.rating ? "-text-tabs" : "text-gray-300"
+                        star <= card.rating ? "-text-brown opacity-50" : "-text-tabs"
                       }`}
                       fill="currentColor"
                       viewBox="0 0 24 24"
@@ -144,11 +144,11 @@ export const Carousel = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="flex gap-5 -text--white-100">
+        <div className="flex gap-5 -text-white ">
           {/* Previous Button */}
           {currentIndex > 0 && (
             <button
-              className="-text-white -bg-black/20 w-[26px] h-[26px] rounded-full -bg--green-700 flex justify-center items-center absolute bottom-[150px]  z-10"
+              className="-text-white -bg-black/20 w-[26px] h-[26px] rounded-full -bg--green-700 flex justify-center items-center absolute bottom-[50%] z-10"
               onClick={goToPrevious}
             >
               <FaChevronLeft />
@@ -157,7 +157,7 @@ export const Carousel = () => {
           {/* Next Button */}
           {currentIndex < reviews.length - 1 && (
             <button
-              className="-bg-black/20 -text-white w-[26px] h-[25px] rounded-full -bg--green-700 flex justify-center items-center z-10 absolute right-0 bottom-[150px]"
+              className="-bg-black/20 -text-white w-[26px] h-[26px] rounded-full -bg--green-700 flex justify-center items-center z-10 absolute bottom-[50%] right-0 "
               onClick={goToNext}
             >
               <FaChevronRight />
