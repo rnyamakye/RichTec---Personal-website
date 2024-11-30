@@ -35,6 +35,7 @@ export default function Home() {
               <Popover />
               <Button_White
                 text={"See My Work"}
+                smooth
                 to={"/#work"}
                 arrow={<FaArrowRight />}
               />
@@ -51,11 +52,11 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <div className="border-b-[1px] pt-[100px] lg:pt-0 -border-border shadow-customShadow w-full"></div>
-      <section
-        className=" lg:w-[1080px] flex flex-col gap-[15px] lg:gap-[50px] md:gap-[50px]"
+      <div
+        className="border-b-[1px] pt-[80px] lg:pt-0 -border-b-border w-full"
         id="services"
-      >
+      ></div>
+      <section className=" lg:w-[1080px] flex flex-col gap-[60px]">
         <div className="text-center gap-[10px] flex flex-col items-center">
           <h1 className="text-[32px] lg:text-[50px] md:text-[45px]">
             My Services
@@ -69,9 +70,9 @@ export default function Home() {
           <ServicesTabs />
         </div>
       </section>
-      <div className="border-b-[1px]  -border-border shadow-customShadow w-full"></div>
-      <section id="work" className=" lg:w-[1080px] ">
-        <div className="flex flex-col gap-[30px] lg:gap-[50px]">
+      <div className="border-b-[1px] -border-border w-full" id="work"></div>
+      <section className=" lg:w-[1080px] ">
+        <div className="flex flex-col gap-[60px]">
           <div className="text-center flex flex-col gap-[10px] ">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
               My Work
@@ -85,9 +86,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="border-b-[1px]  -border-border shadow-customShadow w-full"></div>
-      <section className=" w-full lg:w-[1080px]" id="testimonials">
-        <div className="flex-col flex gap-[40px]">
+      <div
+        className="border-b-[1px] -border-border  w-full"
+        id="testimonials"
+      ></div>
+      <section className=" w-full lg:w-[1080px]">
+        <div className="flex-col flex gap-[60px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
               Happy Client
@@ -100,10 +104,10 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
-      <div className="border-b-[1px]  -border-border shadow-customShadow w-full"></div>
+      <div className="border-b-[1px] -border-border w-full"  id="contact"></div>
       <footer
         className="lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]"
-        id="contact"
+       
       >
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">
           <div className="w-full smd:w-[500px] lg:w-[480px] md:w-1/3">

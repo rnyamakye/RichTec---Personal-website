@@ -94,7 +94,7 @@ export const Carousel = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[380px] lg:p-16 smd:p-16 md:p-16"
+                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] h-[300px] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[380px] lg:p-16 smd:p-16 md:p-16"
                 style={{
                   scrollSnapAlign: "center",
                 }}
