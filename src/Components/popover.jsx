@@ -90,7 +90,7 @@ export const Popover = () => {
                 <a href="https://github.com/rnyamakye" target="_blank">
                   <IoLogoGithub />
                 </a>
-                <a href="https://wa.me/233257152860" target="">
+                <a href="https://wa.me/233257152860" target="_blank">
                   <FaWhatsapp />
                 </a>
                 <a

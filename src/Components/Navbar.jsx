@@ -18,7 +18,7 @@ export const Navbar = () => {
           <a href="https://github.com/rnyamakye" target="_blank">
             <IoLogoGithub />
           </a>
-          <a href="https://wa.me/233257152860" target="">
+          <a href="https://wa.me/233257152860" target="_blank">
             <FaWhatsapp />
           </a>
           <a
@@ -29,10 +29,18 @@ export const Navbar = () => {
           </a>
         </div>
         <div className=" gap-[25px] text-[14px] font-medium -text-navbar hidden lg:flex md:flex">
-          <Link to="/#about">About</Link>
-          <Link to="/#services">Services</Link>
-          <Link to="/#work">Work</Link>
-          <Link to="/#testimonials">Testimonials</Link>
+          <Link smooth to="/#about">
+            About
+          </Link>
+          <Link smooth to="/#services">
+            Services
+          </Link>
+          <Link smooth to="/#work">
+            Work
+          </Link>
+          <Link smooth to="/#testimonials">
+            Testimonials
+          </Link>
         </div>
       </div>
       <Button_Black

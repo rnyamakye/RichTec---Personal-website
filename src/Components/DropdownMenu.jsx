@@ -63,6 +63,7 @@ export const DropdownMenu = () => {
         >
           <div className="relative -text-brown gap-3 text-white ">
             <Link
+              smooth
               to="/#about"
               className="sm:block px-4 py-2 md:hidden hover:-text-black"
               onClick={closeDropdown}
@@ -70,6 +71,7 @@ export const DropdownMenu = () => {
               About
             </Link>
             <Link
+              smooth
               to="/#services"
               className="sm:block px-4 py-2 md:hidden hover:-text-black"
               onClick={closeDropdown}
@@ -77,6 +79,7 @@ export const DropdownMenu = () => {
               Services
             </Link>
             <Link
+              smooth
               to="/#work"
               className="sm:block px-4 py-2 md:hidden hover:-text-black"
               onClick={closeDropdown}
@@ -84,6 +87,7 @@ export const DropdownMenu = () => {
               Work
             </Link>
             <Link
+              smooth
               to="/#testimonials"
               className="sm:block px-4 py-2 md:hidden hover:-text-black"
               onClick={closeDropdown}
@@ -91,6 +95,7 @@ export const DropdownMenu = () => {
               Testimonials
             </Link>
             <Link
+              smooth
               to="/#contact"
               className="sm:block px-4 py-2 md:hidden hover:-text-black"
               onClick={closeDropdown}
