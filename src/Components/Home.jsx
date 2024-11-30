@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { RiTwitterXLine } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -13,6 +14,17 @@ import "../App.css";
 import { Button_White } from "./Button";
 
 export default function Home() {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    scrollToTop();
+  }, []);
+
   return (
     <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10 mx-[5vw]">
       <header className=" lg:w-[1080px] lg:h-fit h-[800px] " id="about">
@@ -104,11 +116,8 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
-      <div className="border-b-[1px] -border-border w-full"  id="contact"></div>
-      <footer
-        className="lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]"
-       
-      >
+      <div className="border-b-[1px] -border-border w-full" id="contact"></div>
+      <footer className="lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]">
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">
           <div className="w-full smd:w-[500px] lg:w-[480px] md:w-1/3">
             <img
