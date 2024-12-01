@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10 mx-[5vw]">
-      <header className=" lg:w-[1080px] lg:h-fit h-[800px] " id="about">
+      <header className=" lg:h-fit h-[800px] " id="about">
         <div className="flex flex-col gap-[120px] lg:gap-[70px] lg:flex-row items-center">
           <div className="flex-col flex gap-[10px] md:gap-[20px] lg:w-1/2 lg:gap-[20px] lg:leading-7">
             <h2 className="-text-brown font-medium">Hello there 👋</h2>
@@ -68,7 +68,7 @@ export default function Home() {
         className="border-b-[1px] pt-[80px] lg:pt-0 -border-b-border w-full"
         id="services"
       ></div>
-      <section className=" lg:w-[1080px] flex flex-col gap-[60px]">
+      <section className="  flex flex-col gap-[60px]">
         <div className="text-center gap-[10px] flex flex-col items-center">
           <h1 className="text-[32px] lg:text-[50px] md:text-[45px]">
             My Services
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </section>
       <div className="border-b-[1px] -border-border w-full" id="work"></div>
-      <section className=" lg:w-[1080px] ">
+      <section className=" ">
         <div className="flex flex-col gap-[60px]">
           <div className="text-center flex flex-col gap-[10px] ">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
@@ -102,7 +102,7 @@ export default function Home() {
         className="border-b-[1px] -border-border  w-full"
         id="testimonials"
       ></div>
-      <section className=" w-full lg:w-[1080px]">
+      <section className=" w-full">
         <div className="flex-col flex gap-[60px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
