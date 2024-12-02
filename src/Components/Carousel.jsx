@@ -86,7 +86,7 @@ export const Carousel = () => {
             style={{
               transform: `translateX(-${
                 currentIndex *
-                (viewportWidth <= 480 ? 100 : viewportWidth <= 768 ? 70 : 49)
+                (viewportWidth <= 480 ? 100 : viewportWidth <= 768 ? 70 : 40)
               }%)`,
               scrollSnapType: "x mandatory",
             }}

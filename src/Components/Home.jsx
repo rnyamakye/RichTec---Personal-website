@@ -27,11 +27,11 @@ export default function Home() {
 
   return (
     <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10 mx-[5vw]">
-      <header className=" lg:h-fit h-[800px] " id="about">
+      <header className=" lg:h-fit h-[800px] md:px-[50px] lg:px-[100px]" id="about">
         <div className="flex flex-col gap-[120px] lg:gap-[70px] lg:flex-row items-center">
           <div className="flex-col flex gap-[10px] md:gap-[20px] lg:w-1/2 lg:gap-[20px] lg:leading-7">
             <h2 className="-text-brown font-medium">Hello there 👋</h2>
-            <h1 className="text-[34px] md:text-[40px] font-[500] lg:leading-snug md:leading-tight">
+            <h1 className="text-[34px] md:text-[40px] font-medium lg:leading-snug md:leading-tight">
               This is Richard, A Web Designer with{" "}
               <span className="-text-brown opacity-60">
                 Creative Expertise & Years of Experience.
