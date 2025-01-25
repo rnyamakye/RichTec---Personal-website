@@ -122,6 +122,6 @@ body {
 .services-tabs.active {
   background-color: black;
   color: white;
-  height: 190px;
+  height: 200px;
   border-radius: 15px;
 }

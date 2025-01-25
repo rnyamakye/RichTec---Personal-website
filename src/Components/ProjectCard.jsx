@@ -1,5 +1,6 @@
 import { TbCalendar } from "react-icons/tb";
 import { BsTag } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ProjectCard = () => {
   const projects = [
@@ -42,6 +43,7 @@ const ProjectCard = () => {
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/ecommerce-image.jpg",
+      link: "https://ecommerce-tutorial-38m7.vercel.app/"
     },
     {
       title: "Agency Website",
@@ -56,7 +58,7 @@ const ProjectCard = () => {
     <div>
       <div className="flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-[20px]">
         {projects.map((project, index) => (
-          <div key={index} className="relative group overflow-hidden">
+          <Link target="_blank" to={project.link} key={index} className="relative group overflow-hidden">
             <img
               src={project.image}
               alt={project.image}
@@ -83,7 +85,7 @@ const ProjectCard = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
