@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { ServicesTabs } from "./ServicesTabs";
 import "../App.css";
-import { Carousel } from "./Carousel";
+// import { Carousel } from "./Carousel";
 import { Form } from "./Form";
 import { FaArrowRight } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
@@ -102,7 +102,7 @@ export default function Home() {
         className="border-b-[1px] -border-border  w-full"
         id="testimonials"
       ></div>
-      <section className=" w-full">
+      {/* <section className=" w-full">
         <div className="flex-col flex gap-[60px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
           <Carousel />
         </div>
-      </section>
+      </section> */}
       <div className="border-b-[1px] -border-border w-full" id="contact"></div>
       <footer className="lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]">
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">
