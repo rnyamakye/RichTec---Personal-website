@@ -81,6 +81,8 @@ export const Popover = () => {
               <img
                 src="/Cover-Image_colored.jpg"
                 alt="cover-image-colored"
+                loading="lazy"
+                decoding="async"
                 className=" w-full lg:w-[200px]  lg:h-[200px] object-cover rounded-[8px] lg:rounded-[20px] object-top"
               />
               <div className="flex gap-[10px] -text-brown text-[15px] lg:text-[24px]">

@@ -2,9 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/RichTech Logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/RichTech Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RichTech Personal Website</title>
+
+    <!-- Preload critical resources -->
+    <link
+      rel="preload"
+      href="/src/fonts/GeneralSans-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/Cover-image-png.png"
+      as="image"
+      fetchpriority="high"
+    />
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//cdn.emailjs.com" />
+    <link rel="dns-prefetch" href="//api.emailjs.com" />
+
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Meta tags for performance -->
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Richard Nyamekye - Professional Web Designer with Creative Expertise & Years of Experience. Specializing in modern web design, logo design, website maintenance, and hosting."
+    />
+    <meta
+      name="keywords"
+      content="web design, logo design, website maintenance, web hosting, Richard Nyamekye, portfolio"
+    />
   </head>
   <body>
     <div id="root"></div>

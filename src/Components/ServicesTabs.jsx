@@ -90,6 +90,8 @@ export const ServicesTabs = () => {
                 <img
                   src={tab.imageUrl}
                   alt={`Image for ${tab.heading}`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full lg:w-full lg:h-[450px] md:h-full object-cover rounded-[15px]"
                 />
               </div>

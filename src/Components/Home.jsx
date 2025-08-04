@@ -27,10 +27,13 @@ export default function Home() {
 
   return (
     <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10 mx-[5vw]">
-      <header className=" lg:h-fit h-[800px] md:px-[50px] lg:px-[100px]" id="about">
+      <header
+        className=" lg:h-fit h-[800px] md:px-[50px] lg:px-[100px]"
+        id="about"
+      >
         <div className="flex flex-col gap-[120px] lg:gap-[70px] lg:flex-row items-center">
           <div className="flex-col flex gap-[10px] md:gap-[20px] lg:w-1/2 lg:gap-[20px] lg:leading-7">
-            <h2 className="-text-brown font-medium">Hello there 👋</h2>
+            <h2 className="font-medium -text-brown">Hello there 👋</h2>
             <h1 className="text-[34px] md:text-[40px] font-medium lg:leading-snug md:leading-tight">
               This is Richard, A Web Designer with{" "}
               <span className="-text-brown opacity-60">
@@ -58,16 +61,18 @@ export default function Home() {
               <img
                 src="/Cover-image-png.png"
                 alt="cover-image"
+                loading="eager"
+                decoding="async"
                 className="w-[240px] h-[400px] lg:h-[500px] object-cover lg:w-[300px] md:w-[350px] smd:w-[300px] smd:h-[500px] md:h-[590px] relative -top-[80px] -right-[28px] lg:-right-[25px] lg:-top-[105px] md:-top-[95px] smd:-top-[82px] smd:-right-[32px] md:-right-[37px] rounded-b-full lg:-rotate-[6deg] -rotate-[6deg] "
               />
             </div>
           </div>
         </div>
       </header>
-      <div
+      <span
         className="border-b-[1px] pt-[80px] lg:pt-0 -border-b-border w-full"
         id="services"
-      ></div>
+      />
       <section className="  flex flex-col gap-[60px]">
         <div className="text-center gap-[10px] flex flex-col items-center">
           <h1 className="text-[32px] lg:text-[50px] md:text-[45px]">
@@ -83,7 +88,7 @@ export default function Home() {
         </div>
       </section>
       <div className="border-b-[1px] -border-border w-full" id="work"></div>
-      <section className=" ">
+      <section className="">
         <div className="flex flex-col gap-[60px]">
           <div className="text-center flex flex-col gap-[10px] ">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
@@ -102,7 +107,7 @@ export default function Home() {
         className="border-b-[1px] -border-border  w-full"
         id="testimonials"
       ></div>
-      {/* <section className=" w-full">
+      {/* <section className="w-full ">
         <div className="flex-col flex gap-[60px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
@@ -123,6 +128,8 @@ export default function Home() {
             <img
               src="/Cover-Image_colored.jpg"
               alt="cover-image-colored"
+              loading="lazy"
+              decoding="async"
               className="h-[351px] w-full lg:w-full lg:h-[600px] md:w-full md:h-[500px] object-cover rounded-[8px] object-top"
             />
           </div>

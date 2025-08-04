@@ -43,7 +43,7 @@ const ProjectCard = () => {
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/ecommerce-image.jpg",
-      link: "https://ecommerce-tutorial-38m7.vercel.app/"
+      link: "https://ecommerce-tutorial-38m7.vercel.app/",
     },
     {
       title: "Agency Website",
@@ -58,10 +58,17 @@ const ProjectCard = () => {
     <div>
       <div className="flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-[20px]">
         {projects.map((project, index) => (
-          <Link target="_blank" to={project.link} key={index} className="relative group overflow-hidden">
+          <Link
+            target="_blank"
+            to={project.link}
+            key={index}
+            className="relative group overflow-hidden"
+          >
             <img
               src={project.image}
               alt={project.image}
+              loading="lazy"
+              decoding="async"
               className="h-[300px] md:h-[400px] w-full lg:h-[380px] lg:rounded-[15px] object-cover rounded-[8px]"
             />
             <div className="absolute inset-0 -bg-black/20 transition-all duration-300 ease-in-out hover:bg-[linear-gradient(to_bottom,_rgba(0,_0,_0,_0.1),_rgba(0,_0,_0,_01))] rounded-[8px]">
