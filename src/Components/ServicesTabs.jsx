@@ -48,6 +48,18 @@ export const ServicesTabs = () => {
 
   return (
     <div className="flex flex-col gap-[20px] lg:gap-[30px] md:gap-[30px] md:flex-row w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 items-center lg:items-start">
+      {/* Hidden images for preloading */}
+      <div className="hidden">
+        {tabs.map((tab) => (
+          <img
+            key={`preload-${tab.id}`}
+            src={tab.imageUrl}
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
+        ))}
+      </div>
       <div className="flex flex-col flex-1 gap-[10px] md:gap-[20px]">
         {tabs.map((tab) => (
           <div
