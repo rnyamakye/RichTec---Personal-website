@@ -43,57 +43,58 @@ export const ServicesTabs = () => {
   ];
 
   const handleTabClick = (id) => {
-    setActiveTab(activeTab === id ? id : id);
+    setActiveTab(id);
   };
 
   return (
-    <div className="flex flex-col gap-[20px] lg:gap-[30px] md:gap-[30px] md:flex-row w-full items-center lg:items-start lg:flex-row ">
-      <div className="flex flex-col lg:w-[70%] gap-[10px] md:gap-[20px] relative md:w-[90%]">
+    <div className="flex flex-col gap-[20px] lg:gap-[30px] md:gap-[30px] md:flex-row w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 items-center lg:items-start">
+      <div className="flex flex-col flex-1 gap-[10px] md:gap-[20px]">
         {tabs.map((tab) => (
           <div
             key={tab.id}
-            className={`services-tabs rounded-[8px] border-[1px] -border-border shadow-customShadow p-[15px] md:p-[20px] -bg-tabs gap-[10px] flex flex-col cursor-pointer duration-500 ${
-              activeTab === tab.id ? "active" : "inactive"
-            } border-tabs-border`}
+            className={`services-tabs rounded-[8px] border-[1px] shadow-customShadow ${
+              activeTab === tab.id
+                ? "p-[8px] md:p-[12px] gap-[3px] active"
+                : "p-[12px] md:p-[15px] gap-[5px] inactive"
+            } flex flex-col cursor-pointer duration-500 border-tabs-border`}
             onClick={() => handleTabClick(tab.id)}
           >
             <h1
-              className={`text-[18px] flex items-center gap-[10px]  ${
+              className={`${
+                activeTab === tab.id ? "text-[18px]" : "text-[16px]"
+              } flex items-center gap-[10px] ${
                 activeTab === tab.id ? "active" : "inactive"
               }`}
             >
               <span>{tab.icon}</span>
               {tab.heading}
             </h1>
-            <div className="flex">
-              {activeTab === tab.id && (
-                <div
-                  className={`-bg-black -text-white text-[15px] gap-[15px] md:gap-[20px] lg:gap-[20px] flex flex-col`}
-                >
-                  <p className="w-[90%]">{tab.content}</p>
-                  <Button_Tab text={"Get Started"} />
-                </div>
-              )}
-            </div>
+            {activeTab === tab.id && (
+              <p className="text-[15px] max-w-md">{tab.content}</p>
+            )}
           </div>
         ))}
       </div>
 
-      <div className="md:w-[100%] w-full md:h-[450px] lg:w-full flex  items-start lg:h-[50px]">
+      <div className="flex-1 h-[250px] md:h-[450px] lg:h-[450px] flex items-start">
         {tabs.map(
           (tab) =>
             activeTab === tab.id && (
               <div
                 key={tab.id}
-                className=" w-full lg:w-full h-[250px] lg:h-[full] rounded-[10px] md:h-full "
+                className="w-full h-full rounded-[10px] overflow-hidden relative group"
               >
                 <img
                   src={tab.imageUrl}
                   alt={`Image for ${tab.heading}`}
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-full lg:w-full lg:h-[450px] md:h-full object-cover rounded-[15px]"
+                  className="w-full h-full object-cover rounded-[15px]"
                 />
+                {/* Dark gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[15px] flex items-center justify-center">
+                  <Button_Tab text={"Get Started"} />
+                </div>
               </div>
             )
         )}
