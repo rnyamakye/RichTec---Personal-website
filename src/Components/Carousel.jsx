@@ -17,7 +17,7 @@ export const Carousel = () => {
       title: "Non-Profit Organization",
       src: "https://scontent.facc5-1.fna.fbcdn.net/v/t39.30808-1/527520708_1235720798572941_4166336557709576708_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=bySbug9tbH8Q7kNvwE2s2bf&_nc_oc=AdknpfzjWO7uWt71cphEpDhvL3xmrBuLE-fC4YyuuRzNIn4i1A_CHYUNdCP9c3HcXXQ&_nc_zt=24&_nc_ht=scontent.facc5-1.fna&_nc_gid=unl7SA7F_2bIMjXbC9RSXw&oh=00_Afbd4l_z_aoRKT_JbMBwZFwqLJpPjCCgytFY7iYbeMOFTg&oe=68D9DAE7",
       review:
-        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
+        "Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.",
       rating: 5, // Default rating
     },
     // {
@@ -72,7 +72,7 @@ export const Carousel = () => {
 
   return (
     <div>
-      <div className="relative flex flex-col gap-5 overflow-hidden">
+      <div className="relative flex flex-col gap-5 px-4 mx-auto overflow-hidden max-w-7xl md:px-6 lg:px-8">
         <div className={`flex flex-col gap-8 `}>
           <div
             className={`flex gap-5 md:gap-3 lg:gap-8 px-2 transition-transform duration-300 ease-in-out`}
@@ -87,7 +87,7 @@ export const Carousel = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] h-[300px] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[380px] p-10"
+                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] h-[300px] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[380px] md:p-10"
                 style={{
                   scrollSnapAlign: "center",
                 }}
@@ -99,11 +99,13 @@ export const Carousel = () => {
                     className="size-[60px] rounded-full object-cover"
                   />
                   <div>
-                    <p className="text-[18px]">{card.name}</p>
-                    <p className="text-[13px] opacity-50">{card.title}</p>
+                    <p className="md:text-[18px] text-[15px]">{card.name}</p>
+                    <p className="md:text-[13px] text-[12px] opacity-50">
+                      {card.title}
+                    </p>
                   </div>
                 </div>
-                <p className="text-[15px]">{card.review}</p>
+                <p className="md:text-[15px] text-[12px]">{card.review}</p>
 
                 <div className="absolute flex justify-start mt-2 bottom-10">
                   {[1, 2, 3, 4, 5].map((star) => (

@@ -125,9 +125,9 @@ export default function Home() {
       <div className="border-b-[1px] -border-border w-full" id="contact"></div>
       <footer className="lg:w-[1280px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]">
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">
-          <div className="w-full smd:w-[500px] lg:w-[600px] md:w-1/3">
+          <div className="w-full smd:w-[500px] lg:w-[700px] md:w-1/3">
             <img
-              src="/Cover-Image_colored.jpg"
+              src="/contact_img.jpg"
               alt="cover-image-colored"
               loading="lazy"
               decoding="async"

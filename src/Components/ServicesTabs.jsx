@@ -65,7 +65,7 @@ export const ServicesTabs = () => {
             key={tab.id}
             className={`services-tabs rounded-[8px] border-[1px] shadow-customShadow ${
               activeTab === tab.id
-                ? "p-[8px] md:p-[12px] gap-[3px] active"
+                ? "p-[15px] md:p-[12px] gap-[3px] active"
                 : "p-[12px] md:p-[15px] gap-[5px] inactive"
             } flex flex-col cursor-pointer duration-500 border-tabs-border`}
             onClick={() => handleTabClick(tab.id)}
@@ -84,12 +84,14 @@ export const ServicesTabs = () => {
               <p className="text-[15px] max-w-md">{tab.content}</p>
             )}
             <div className="mt-10 ">
-              {activeTab === tab.id && <Button_Tab text={"Get Started"} to />}
+              {activeTab === tab.id && (
+                <Button_Tab text={"Get Started"} smooth to={"/#contact"} />
+              )}
             </div>
           </div>
         ))}
       </div>
-      <div className="flex-1 h-[250px] md:h-[450px] lg:h-[450px] flex items-start">
+      <div className="flex-1 h-[250px] md:h-[450px] lg:h-[500px] flex items-start">
         {tabs.map(
           (tab) =>
             activeTab === tab.id && (
