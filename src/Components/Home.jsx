@@ -14,16 +14,16 @@ import "../App.css";
 import { Button_White } from "./Button";
 
 export default function Home() {
-  useEffect(() => {
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    };
+  // useEffect(() => {
+  //   const scrollToTop = () => {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth",
+  //     });
+  //   };
 
-    scrollToTop();
-  }, []);
+  //   scrollToTop();
+  // }, []);
 
   return (
     <main className="mt-[170px] lg:mt-[170px] flex flex-col gap-[120px] items-center z-10 mx-[5vw]">
@@ -35,7 +35,7 @@ export default function Home() {
           <div className="flex-col flex gap-[10px] md:gap-[20px] lg:w-1/2 lg:gap-[20px] lg:leading-7">
             <h2 className="font-medium -text-brown">Hello there 👋</h2>
             <h1 className="text-[34px] md:text-[40px] font-medium lg:leading-snug md:leading-tight">
-              This is Richard, A Web Designer with{" "}
+              I'm Richard, A Web Designer with{" "}
               <span className="-text-brown opacity-60">
                 Creative Expertise & Years of Experience.
               </span>
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="relative lg:translate-x-[30px] translate-y-[20px] lg:w-[400px] w-[320px] h-[320px] -bg-black rounded-full lg:h-[400px] md:h-[500px] smd:w-[420px] smd:h-[420px] md:w-[500px] lg:top-[30px]">
+            <div className="relative lg:translate-x-28 translate-y-10 lg:w-[400px] w-[320px] h-[320px] -bg-black rounded-full lg:h-[400px] md:h-[500px] smd:w-[420px] smd:h-[420px] md:w-[500px] lg:top-[30px]">
               <img
                 src="/Cover-image-png.png"
                 alt="cover-image"
@@ -103,10 +103,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div
+      {/* <div
         className="border-b-[1px] -border-border  w-full"
         id="testimonials"
-      ></div>
+      ></div> */}
       {/* <section className="w-full ">
         <div className="flex-col flex gap-[60px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
@@ -122,9 +122,9 @@ export default function Home() {
         </div>
       </section> */}
       <div className="border-b-[1px] -border-border w-full" id="contact"></div>
-      <footer className="lg:w-[1080px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]">
+      <footer className="lg:w-[1280px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]">
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">
-          <div className="w-full smd:w-[500px] lg:w-[480px] md:w-1/3">
+          <div className="w-full smd:w-[500px] lg:w-[600px] md:w-1/3">
             <img
               src="/Cover-Image_colored.jpg"
               alt="cover-image-colored"
