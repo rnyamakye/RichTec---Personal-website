@@ -48,7 +48,6 @@ export const ServicesTabs = () => {
 
   return (
     <div className="flex flex-col gap-[20px] lg:gap-[30px] md:gap-[30px] md:flex-row w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 items-center lg:items-start">
-      {/* Hidden images for preloading */}
       <div className="hidden">
         {tabs.map((tab) => (
           <img
@@ -84,10 +83,12 @@ export const ServicesTabs = () => {
             {activeTab === tab.id && (
               <p className="text-[15px] max-w-md">{tab.content}</p>
             )}
+            <div className="mt-10 ">
+              {activeTab === tab.id && <Button_Tab text={"Get Started"} to />}
+            </div>
           </div>
         ))}
       </div>
-
       <div className="flex-1 h-[250px] md:h-[450px] lg:h-[450px] flex items-start">
         {tabs.map(
           (tab) =>
@@ -104,9 +105,9 @@ export const ServicesTabs = () => {
                   className="w-full h-full object-cover rounded-[15px]"
                 />
                 {/* Dark gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[15px] flex items-center justify-center">
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[15px] flex items-center justify-center">
                   <Button_Tab text={"Get Started"} />
-                </div>
+                </div> */}
               </div>
             )
         )}

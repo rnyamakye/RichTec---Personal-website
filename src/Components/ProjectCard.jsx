@@ -27,6 +27,7 @@ const ProjectCard = () => {
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/nonProfit-website-image.jpg",
+      link: "https://thegreatabangafoundation.org/",
     },
     {
       title: "Blog Website",
@@ -62,7 +63,7 @@ const ProjectCard = () => {
             target="_blank"
             to={project.link}
             key={index}
-            className="relative group overflow-hidden"
+            className="relative overflow-hidden group"
           >
             <img
               src={project.image}

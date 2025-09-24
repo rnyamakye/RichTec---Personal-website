@@ -6,43 +6,36 @@ export const Carousel = () => {
     {
       name: "Emmanuel",
       title: "Pencil artist",
-      src: "/client-1.jpg",
+      src: "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/d210eed2c8fc3419da3dabab82686ff6~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=d2c6278b&x-expires=1758895200&x-signature=Q2TjuaCFt1oNR1Fyjtp6q9C8eWM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=maliva",
       review:
-        "'Working with Richard was a game-changer for my business. He took my vision and transformed it into a stunning website that not only looks great but also functions seamlessly.'",
+        "Working with Richard was a game-changer for my business. He took my vision and transformed it into a stunning website that not only looks great but also functions seamlessly.",
       rating: 5, // Default rating
     },
+
     {
-      name: "David Fletcher",
-      title: "Organic Food Enthusiast",
-      src: "/client-1.jpg",
+      name: "The great Abanga Foundation",
+      title: "Non-Profit Organization",
+      src: "https://scontent.facc5-1.fna.fbcdn.net/v/t39.30808-1/527520708_1235720798572941_4166336557709576708_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=bySbug9tbH8Q7kNvwE2s2bf&_nc_oc=AdknpfzjWO7uWt71cphEpDhvL3xmrBuLE-fC4YyuuRzNIn4i1A_CHYUNdCP9c3HcXXQ&_nc_zt=24&_nc_ht=scontent.facc5-1.fna&_nc_gid=unl7SA7F_2bIMjXbC9RSXw&oh=00_Afbd4l_z_aoRKT_JbMBwZFwqLJpPjCCgytFY7iYbeMOFTg&oe=68D9DAE7",
       review:
-        "'I was impressed with how quickly Richard understood my business needs and delivered a tailored solution.'",
+        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
       rating: 5, // Default rating
     },
-    {
-      name: "Sophia Barnes",
-      title: "Professional Chef and Culinary Expert",
-      src: "/client-2.jpg",
-      review:
-        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
-      rating: 4, // Default rating
-    },
-    {
-      name: "Sophia Barnes",
-      title: "Professional Chef and Culinary Expert",
-      src: "/client-2.jpg",
-      review:
-        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
-      rating: 4, // Default rating
-    },
-    {
-      name: "Sophia Barnes",
-      title: "Professional Chef and Culinary Expert",
-      src: "/client-2.jpg",
-      review:
-        "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
-      rating: 4, // Default rating
-    },
+    // {
+    //   name: "Sophia Barnes",
+    //   title: "Professional Chef and Culinary Expert",
+    //   src: "/client-2.jpg",
+    //   review:
+    //     "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
+    //   rating: 4, // Default rating
+    // },
+    // {
+    //   name: "Sophia Barnes",
+    //   title: "Professional Chef and Culinary Expert",
+    //   src: "/client-2.jpg",
+    //   review:
+    //     "'Richard's work for my business exceeded my expectations in every way. He not only delivered a beautiful website but also provided insightful advice on content strategy and SEO best practices.'",
+    //   rating: 4, // Default rating
+    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -79,7 +72,7 @@ export const Carousel = () => {
 
   return (
     <div>
-      <div className="overflow-hidden flex-col flex gap-5 relative">
+      <div className="relative flex flex-col gap-5 overflow-hidden">
         <div className={`flex flex-col gap-8 `}>
           <div
             className={`flex gap-5 md:gap-3 lg:gap-8 px-2 transition-transform duration-300 ease-in-out`}
@@ -94,7 +87,7 @@ export const Carousel = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] h-[300px] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[380px] lg:p-16 smd:p-16 md:p-16"
+                className="-bg--lime-green border -border-border shadow-customShadow flex-col flex gap-5 p-7 rounded-2xl flex-shrink-0 w-[99%] h-[300px] lg:w-[500px] lg:h-[350px] smd:w-[400px] md:w-[350px] md:h-[380px] p-10"
                 style={{
                   scrollSnapAlign: "center",
                 }}
@@ -112,13 +105,15 @@ export const Carousel = () => {
                 </div>
                 <p className="text-[15px]">{card.review}</p>
 
-                <div className="flex justify-start absolute bottom-[20px] mt-2">
+                <div className="absolute flex justify-start mt-2 bottom-10">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <svg
                       key={star}
                       onClick={() => handleRatingChange(index, star)}
                       className={`w-3 h-3 cursor-pointer ${
-                        star <= card.rating ? "-text-brown opacity-50" : "-text-tabs"
+                        star <= card.rating
+                          ? "-text-brown opacity-50"
+                          : "-text-tabs"
                       }`}
                       fill="currentColor"
                       viewBox="0 0 24 24"
@@ -132,7 +127,7 @@ export const Carousel = () => {
           </div>
         </div>
 
-        <div className="flex justify-center space-x-1 mt-0">
+        <div className="flex justify-center mt-0 space-x-1">
           {cards.map((_, index) => (
             <div
               key={index}

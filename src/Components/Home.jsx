@@ -12,6 +12,7 @@ import ProjectCard from "./ProjectCard";
 import { Popover } from "./popover";
 import "../App.css";
 import { Button_White } from "./Button";
+import { Carousel } from "./Carousel";
 
 export default function Home() {
   // useEffect(() => {
@@ -57,13 +58,13 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="relative lg:translate-x-28 translate-y-10 lg:w-[400px] w-[320px] h-[320px] -bg-black rounded-full lg:h-[400px] md:h-[500px] smd:w-[420px] smd:h-[420px] md:w-[500px] lg:top-[30px]">
+            <div className="relative lg:translate-x-28 translate-y-10 lg:w-[400px] w-[320px] h-[320px] -bg-black rounded-full lg:h-[400px] md:h-[450px] smd:w-[420px] smd:h-[420px] md:w-[450px] lg:top-[30px]">
               <img
                 src="/Cover-image-png.png"
                 alt="cover-image"
                 loading="eager"
                 decoding="async"
-                className="w-[240px] h-[400px] lg:h-[500px] object-cover lg:w-[300px] md:w-[350px] smd:w-[300px] smd:h-[500px] md:h-[590px] relative -top-[80px] -right-[28px] lg:-right-[25px] lg:-top-[105px] md:-top-[95px] smd:-top-[82px] smd:-right-[32px] md:-right-[37px] rounded-b-full lg:-rotate-[6deg] -rotate-[6deg] "
+                className="w-[240px] h-[400px] lg:h-[500px] object-cover lg:w-[300px] md:w-[320px] smd:w-[300px] smd:h-[500px] md:h-[550px] relative -top-[80px] -right-[28px] lg:-right-[25px] lg:-top-[105px] md:-top-[100px] smd:-top-[82px] smd:-right-[32px] md:-right-[37px] rounded-b-full lg:-rotate-[6deg] -rotate-[6deg] "
               />
             </div>
           </div>
@@ -103,11 +104,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <div
+      <div
         className="border-b-[1px] -border-border  w-full"
         id="testimonials"
-      ></div> */}
-      {/* <section className="w-full ">
+      ></div>
+      <section className="w-full ">
         <div className="flex-col flex gap-[60px]">
           <div className="text-center flex-col flex gap-[10px] items-center">
             <h1 className="text-[30px] lg:text-[50px] md:text-[45px]">
@@ -120,7 +121,7 @@ export default function Home() {
           </div>
           <Carousel />
         </div>
-      </section> */}
+      </section>
       <div className="border-b-[1px] -border-border w-full" id="contact"></div>
       <footer className="lg:w-[1280px] flex flex-col gap-[50px] lg:gap-[100px] items-center mb-[50px]">
         <div className=" justify-center items-center flex-col flex  md:flex-row lg:flex-row gap-[30px] lg:gap-[40px] md:gap-[30px]">
