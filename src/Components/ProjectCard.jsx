@@ -15,7 +15,7 @@ const ProjectCard = () => {
     {
       title: "Membership Website",
       description:
-        "An event website is a platform designed to promote and manage events such as conferences, seminars, and more",
+        "A membership website provides exclusive access to content, services, or communities through paid or free subscriptions",
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/Membership-website-image.jpg",
@@ -23,7 +23,7 @@ const ProjectCard = () => {
     {
       title: "NonProfit Website",
       description:
-        "An event website is a platform designed to promote and manage events such as conferences, seminars, and more",
+        "A nonprofit website showcases missions, impacts, and facilitates donations for charitable organizations and causes",
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/nonProfit-website-image.jpg",
@@ -32,7 +32,7 @@ const ProjectCard = () => {
     {
       title: "Blog Website",
       description:
-        "An event website is a platform designed to promote and manage events such as conferences, seminars, and more",
+        "A blog website is a platform for regularly publishing articles, insights, and content to engage with readers and audiences",
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/blog-image.jpg",
@@ -40,7 +40,7 @@ const ProjectCard = () => {
     {
       title: "E-commerce Website",
       description:
-        "An event website is a platform designed to promote and manage events such as conferences, seminars, and more",
+        "An e-commerce website enables online buying and selling of products or services with secure payment processing",
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/ecommerce-image.jpg",
@@ -49,7 +49,7 @@ const ProjectCard = () => {
     {
       title: "Agency Website",
       description:
-        "An event website is a platform designed to promote and manage events such as conferences, seminars, and more",
+        "An agency website showcases services, portfolio, and expertise to attract clients and establish professional credibility",
       date: "Oct 30, 2024",
       type: "Web Design",
       image: "/Agency-image.jpg",
